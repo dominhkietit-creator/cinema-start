@@ -2,6 +2,15 @@
   "expo": {
     "name": "cinema-start",
     "slug": "cinema-start",
+    "scheme": "cinema-start",
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

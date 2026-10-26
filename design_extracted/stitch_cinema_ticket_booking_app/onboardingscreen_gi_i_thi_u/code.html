@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#412d00", "error-container": "#93000a", "surface-container-highest": "#343439", "on-primary-container": "#6b4c00", "on-primary-fixed-variant": "#5e4200", "tertiary-fixed-dim": "#00daf3", "on-error-container": "#ffdad6", "inverse-primary": "#7c5800", "surface-container": "#1f1f24", "tertiary": "#93eeff", "surface-container-high": "#292a2e", "on-background": "#e3e2e8", "surface-variant": "#343439", "primary-fixed": "#ffdea8", "on-primary-fixed": "#271900", "background": "#121317", "primary-fixed-dim": "#ffba20", "surface-container-lowest": "#0d0e12", "secondary-fixed-dim": "#ffb5a0", "surface": "#121317", "tertiary-fixed": "#9cf0ff", "on-secondary-container": "#541000", "surface-bright": "#38393e", "surface-dim": "#121317", "on-surface-variant": "#d5c4ab", "inverse-surface": "#e3e2e8", "outline": "#9e8f78", "on-secondary-fixed-variant": "#872000", "on-tertiary-fixed-variant": "#004f58", "on-tertiary-container": "#005a65", "outline-variant": "#514532", "error": "#ffb4ab", "secondary-container": "#ff5625", "tertiary-container": "#00d8f1", "on-tertiary": "#00363d", "primary": "#ffdca1", "on-surface": "#e3e2e8", "on-secondary-fixed": "#3b0900", "on-tertiary-fixed": "#001f24", "secondary-fixed": "#ffdbd1", "primary-container": "#ffb800", "inverse-on-surface": "#2f3035", "surface-tint": "#ffba20", "on-error": "#690005", "on-secondary": "#601400", "secondary": "#ffb5a0", "surface-container-low": "#1a1b20" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin": "1.5rem", "space-md": "1rem", "gutter": "1rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem" }, "fontFamily": { "label-sm": ["Space Grotesk"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "label-lg": ["Space Grotesk"], "headline-sm": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md pt-safe pb-safe flex flex-col min-h-screen"><main class="flex flex-col relative w-full bg-surface min-h-screen"><div class="flex flex-col w-full relative select-none pb-8 overflow-hidden">
+<!-- Atmospheric Ambient Glows behind cards -->
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-72 -right-16 w-60 h-60 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 -left-16 w-60 h-60 rounded-full bg-tertiary-container/15 blur-3xl pointer-events-none"></div>
+<!-- Header Bar -->
+<div class="relative w-full flex items-center justify-between px-5 pt-3 pb-2 z-20">
+<div class="flex items-center space-x-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg" style="font-variation-settings: 'FILL' 1;">movie</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant/80">Cinema Star</span>
+<span class="font-label-md text-label-md font-semibold text-primary-fixed tracking-tight">EXPERIENCE</span>
+</div>
+</div>
+<button class="flex items-center space-x-1 px-3 py-1.5 rounded-full bg-surface-container-high/60 backdrop-blur-md active:scale-95 transition-transform duration-150" id="skipBtn">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Bỏ qua</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">arrow_forward_ios</span>
+</button>
+</div>
+<!-- 3D Film Ticket Carousel Section -->
+<div class="relative w-full mt-2 flex flex-col items-center">
+<!-- Carousel Slides Container -->
+<div class="relative w-full h-[330px] flex items-center justify-center overflow-visible" id="carouselWrapper">
+<!-- Slide 1 (Active) -->
+<div class="slide-card absolute w-[82%] h-[310px] rounded-2xl bg-surface-container-high p-3 flex flex-col justify-between shadow-2xl transition-all duration-500 ease-out transform translate-x-0 scale-100 z-10 opacity-100" id="slide-0">
+<!-- Film card inner art -->
+<div class="relative w-full h-[200px] rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="A futuristic ultra-wide curved IMAX Laser theater auditorium with dramatic deep neon cyan and gold ambient lighting, sleek velvet seats, cinematic atmosphere, 8k resolution hyper-realistic digital render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcyk1mLruuCdGAy94ClKYheWmhidcxkJ3m1YrP1fke2uxAGqlxyjgE-mt1ZVD7Eu_9nxH_cO3zonKY4_a24c4JLgDdTNe1NOYoDDLY6-Urc7CEKUP3sdrUJYg3Fx7_0NslCAYyY2FxKEKejs8oqLt3ORMlIAzM6xuo88GBHqM4-pAoSVrYcV_X17Y5_31pj8J95rJ24UT6GfthTG_ZTXGINPzEfK0C9SM4RJ5mNsDc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"></div>
+<!-- Badge overlay -->
+<div class="absolute top-2.5 left-2.5 flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">IMAX Laser 4K</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">hd</span> Đắm chìm thị giác
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/20 text-primary font-bold">120 FPS</span>
+</div>
+</div>
+<!-- Cinema Ticket Perforated Tear Details -->
+<div class="relative flex items-center justify-between py-1 px-1">
+<div class="w-4 h-4 -ml-5 rounded-full bg-surface"></div>
+<div class="flex-1 border-b border-dashed border-outline-variant/60 mx-2"></div>
+<div class="w-4 h-4 -mr-5 rounded-full bg-surface"></div>
+</div>
+<!-- Card bottom micro-specs -->
+<div class="flex items-center justify-between px-2 pb-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg">surround_sound</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Âm vòm Dolby Atmos 64 kênh</span>
+</div>
+<div class="flex items-center space-x-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm">5.0</span>
+</div>
+</div>
+</div>
+<!-- Slide 2 (Hidden initial) -->
+<div class="slide-card absolute w-[82%] h-[310px] rounded-2xl bg-surface-container-high p-3 flex flex-col justify-between shadow-2xl transition-all duration-500 ease-out transform translate-x-16 scale-90 z-0 opacity-0 pointer-events-none" id="slide-1">
+<div class="relative w-full h-[200px] rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="A smartphone displaying a glowing dynamic cinema seating layout in dark gold and neon amber, instant tap-to-reserve visual, crisp modern interface, high-end 3D metallic movie ticket aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZm-YsrZQa-zZnAPch5WbihtFSlgF364sEeoVCAxS5hvgNvXlpoR3gyoiRdyBVPhMEXmMGlUQkk5vBqkloICRDdwoCT8ay5WqOBBPc_nYt-WXeFy4uFDtFgWe1KiW2e7R4lCoKUqEAU6vqlVhB5d32z7T07g_Waxb_OQRS_SH7KxcCohYt0OyW1hjIZQcOXhfnX8JtTBVc9_hyVdmu4IJHp882ZXYIuzbg7BSgd59"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Tốc độ tức thì</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">touch_app</span> Đặt vé 3 chạm
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-bold">15 Giây</span>
+</div>
+</div>
+<div class="relative flex items-center justify-between py-1 px-1">
+<div class="w-4 h-4 -ml-5 rounded-full bg-surface"></div>
+<div class="flex-1 border-b border-dashed border-outline-variant/60 mx-2"></div>
+<div class="w-4 h-4 -mr-5 rounded-full bg-surface"></div>
+</div>
+<div class="flex items-center justify-between px-2 pb-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg">airline_seat_recline_extra</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Giữ chỗ VIP thời gian thực</span>
+</div>
+<div class="flex items-center space-x-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-sm text-label-sm">Cực nhanh</span>
+</div>
+</div>
+</div>
+<!-- Slide 3 (Hidden initial) -->
+<div class="slide-card absolute w-[82%] h-[310px] rounded-2xl bg-surface-container-high p-3 flex flex-col justify-between shadow-2xl transition-all duration-500 ease-out transform translate-x-32 scale-75 z-0 opacity-0 pointer-events-none" id="slide-2">
+<div class="relative w-full h-[200px] rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Gourmet cinema caramel popcorn tub with neon glow logo and icy sparkling soda drinks being delivered directly to a luxury leather movie theater seat, moody cinematic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOxZ_5E2dAr9UpFYFLmsewGgt8NxYNT87smJBpPLdGhkNLyERJsqn1iyaWl-Id3XNp3uT3yWy_bBdssGAngWF4fErmDlMXwcBVL71NDE6uipajKtdtoQhKEHRinoho-2bLebsFYCd4SGaLJWwrHG_tZyQyjB24g2wC9ZB-RxWc4_VpahkORWp6Bh_O4Xh0cOw-r56l8kelZvdwx1Hzr5d4tH2WdAICWPrb3Yjq1L2X"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">VIP Lounge Service</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">room_service</span> Giao tận tay
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed font-bold">Nóng giòn</span>
+</div>
+</div>
+<div class="relative flex items-center justify-between py-1 px-1">
+<div class="w-4 h-4 -ml-5 rounded-full bg-surface"></div>
+<div class="flex-1 border-b border-dashed border-outline-variant/60 mx-2"></div>
+<div class="w-4 h-4 -mr-5 rounded-full bg-surface"></div>
+</div>
+<div class="flex items-center justify-between px-2 pb-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg">fastfood</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bắp phô mai &amp; nước ngọt mát lạnh</span>
+</div>
+<div class="flex items-center space-x-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm">Chuẩn vị</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Page Indicator Dots -->
+<div class="flex items-center justify-center space-x-2.5 mt-5">
+<button aria-label="Slide 1" class="h-2 rounded-full transition-all duration-300 w-8 bg-primary-container shadow-[0_0_12px_rgba(255,184,0,0.7)]" id="dot-0" onclick="goToSlide(0)"></button>
+<button aria-label="Slide 2" class="h-2 rounded-full transition-all duration-300 w-2.5 bg-surface-variant" id="dot-1" onclick="goToSlide(1)"></button>
+<button aria-label="Slide 3" class="h-2 rounded-full transition-all duration-300 w-2.5 bg-surface-variant" id="dot-2" onclick="goToSlide(2)"></button>
+</div>
+<!-- Content Narrative Text -->
+<div class="flex flex-col items-center text-center px-6 mt-6">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight transition-opacity duration-200" id="slideTitle">
+      Đặt Vé Nhanh Chóng, Không Lo Xếp Hàng
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2.5 leading-relaxed max-w-sm transition-opacity duration-200" id="slideDesc">
+      Chủ động chọn ghế VIP yêu thích, thanh toán đa kênh siêu tốc trong vài giây và quét mã QR vào thẳng phòng chiếu màn hình lớn.
+    </p>
+<!-- Interactive Perks Badges -->
+<div class="grid grid-cols-3 gap-2 w-full max-w-xs mt-4">
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">qr_code_scanner</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Vào rạp 1s</span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-xl">event_seat</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Ghế đôi Sweetbox</span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-secondary text-xl">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">0% phụ phí</span>
+</div>
+</div>
+</div>
+<!-- Bottom CTA Actions (Anchored for Ergonomics) -->
+<div class="w-full px-5 mt-6 flex flex-col space-y-3">
+<!-- Primary CTA Button with Warm Amber Glow -->
+<button class="group relative w-full py-4 px-6 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-[0_8px_24px_rgba(255,184,0,0.35)] active:scale-[0.98] transition-all duration-150 flex items-center justify-center space-x-2 overflow-hidden" id="nextBtn">
+<span class="relative z-10" id="nextBtnText">Tiếp tục</span>
+<span class="material-symbols-outlined relative z-10 transition-transform duration-200 group-hover:translate-x-1 text-lg">arrow_forward</span>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
+</button>
+<!-- Secondary CTA Button -->
+<button class="w-full py-3.5 px-6 rounded-xl bg-surface-container-high/70 text-on-surface font-label-md text-label-md font-semibold tracking-wide active:scale-[0.98] transition-transform duration-150 flex items-center justify-center space-x-1.5 shadow-sm" id="loginBtn">
+<span class="text-on-surface-variant">Đã có tài khoản?</span>
+<span class="text-primary-fixed font-bold">Đăng nhập ngay</span>
+</button>
+</div>
+</div>
+<script>
+  (function() {
+    let currentSlide = 0;
+    const slidesData = [
+      {
+        title: "Đặt Vé Nhanh Chóng, Không Lo Xếp Hàng",
+        desc: "Chủ động chọn ghế VIP yêu thích, thanh toán đa kênh siêu tốc trong vài giây và quét mã QR vào thẳng phòng chiếu màn hình lớn."
+      },
+      {
+        title: "Màn Hình Cong IMAX Laser Đỉnh Cao",
+        desc: "Trải nghiệm rạp chiếu chuẩn quốc tế với hệ thống máy chiếu Laser 4K sắc nét và hiệu ứng âm thanh 360 độ ngập tràn cảm xúc."
+      },
+      {
+        title: "Bắp Nước Nóng Giòn Giao Tận Ghế",
+        desc: "Gọi combo bắp rang bơ thơm lừng cùng đồ uống mát lạnh ngay trên ứng dụng, nhân viên phục vụ tận vị trí ngồi trước giờ chiếu."
+      }
+    ];
+
+    const slideCards = [
+      document.getElementById('slide-0'),
+      document.getElementById('slide-1'),
+      document.getElementById('slide-2')
+    ];
+    
+    const dots = [
+      document.getElementById('dot-0'),
+      document.getElementById('dot-1'),
+      document.getElementById('dot-2')
+    ];
+
+    const titleEl = document.getElementById('slideTitle');
+    const descEl = document.getElementById('slideDesc');
+    const nextBtn = document.getElementById('nextBtn');
+    const nextBtnText = document.getElementById('nextBtnText');
+    const skipBtn = document.getElementById('skipBtn');
+
+    window.goToSlide = function(index) {
+      currentSlide = index;
+      updateUI();
+    };
+
+    function updateUI() {
+      // Update Slide Positions & Visual Hierarchy
+      slideCards.forEach((card, i) => {
+        if (!card) return;
+        if (i === currentSlide) {
+          card.className = "slide-card absolute w-[82%] h-[310px] rounded-2xl bg-surface-container-high p-3 flex flex-col justify-between shadow-2xl transition-all duration-500 ease-out transform translate-x-0 scale-100 z-10 opacity-100";
+        } else if (i < currentSlide) {
+          card.className = "slide-card absolute w-[82%] h-[310px] rounded-2xl bg-surface-container-high p-3 flex flex-col justify-between shadow-2xl transition-all duration-500 ease-out transform -translate-x-20 scale-90 z-0 opacity-0 pointer-events-none";
+        } else {
+          card.className = "slide-card absolute w-[82%] h-[310px] rounded-2xl bg-surface-container-high p-3 flex flex-col justify-between shadow-2xl transition-all duration-500 ease-out transform translate-x-20 scale-90 z-0 opacity-0 pointer-events-none";
+        }
+      });
+
+      // Update Dots
+      dots.forEach((dot, i) => {
+        if (!dot) return;
+        if (i === currentSlide) {
+          dot.className = "h-2 rounded-full transition-all duration-300 w-8 bg-primary-container shadow-[0_0_12px_rgba(255,184,0,0.7)]";
+        } else {
+          dot.className = "h-2 rounded-full transition-all duration-300 w-2.5 bg-surface-variant";
+        }
+      });
+
+      // Smooth Fade for text
+      if (titleEl && descEl) {
+        titleEl.style.opacity = '0';
+        descEl.style.opacity = '0';
+        setTimeout(() => {
+          titleEl.textContent = slidesData[currentSlide].title;
+          descEl.textContent = slidesData[currentSlide].desc;
+          titleEl.style.opacity = '1';
+          descEl.style.opacity = '1';
+        }, 150);
+      }
+
+      // Update Next CTA
+      if (nextBtnText) {
+        nextBtnText.textContent = currentSlide === slidesData.length - 1 ? "Bắt đầu khám phá" : "Tiếp tục";
+      }
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        if (currentSlide < slidesData.length - 1) {
+          goToSlide(currentSlide + 1);
+        } else {
+          goToSlide(0); // Cycle back for interactive demonstration
+        }
+      });
+    }
+
+    if (skipBtn) {
+      skipBtn.addEventListener('click', () => {
+        goToSlide(slidesData.length - 1);
+      });
+    }
+
+    // Touch Swipe Detection for mobile ergonomics
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const carouselWrapper = document.getElementById('carouselWrapper');
+    
+    if (carouselWrapper) {
+      carouselWrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      carouselWrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleGesture();
+      }, { passive: true });
+    }
+
+    function handleGesture() {
+      if (touchEndX < touchStartX - 40) {
+        // Swiped Left
+        if (currentSlide < slidesData.length - 1) goToSlide(currentSlide + 1);
+      }
+      if (touchEndX > touchStartX + 40) {
+        // Swiped Right
+        if (currentSlide > 0) goToSlide(currentSlide - 1);
+      }
+    }
+  })();
+</script></main></body></html>
