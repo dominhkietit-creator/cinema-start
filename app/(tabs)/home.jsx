@@ -289,7 +289,7 @@ const styles = StyleSheet.create({
     backgroundColor: THEME.colors.secondaryContainer,
   },
   scrollBody: {
-    paddingBottom: 40,
+    paddingBottom: 95,
   },
   cinemaPill: {
     flexDirection: 'row',

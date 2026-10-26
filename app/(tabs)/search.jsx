@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   resultsList: {
     paddingHorizontal: 16,
     paddingTop: 10,
-    paddingBottom: 30,
+    paddingBottom: 95,
     gap: 12,
   },
   resultsCount: {

@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
   },
   scrollBody: {
     paddingHorizontal: 16,
-    paddingBottom: 30,
+    paddingBottom: 95,
     gap: 14,
   },
   ticketCard: {
