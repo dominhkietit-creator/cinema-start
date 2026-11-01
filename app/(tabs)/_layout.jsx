@@ -14,13 +14,14 @@ export default function TabLayout() {
     /iPhone|iPad|iPod|Android/i.test(navigator.userAgent || '');
 
   // Generous bottom clearance:
-  // On Mobile Safari / Chrome web, the floating address bar requires ~38-42px padding
+  // Mobile Safari / Chrome web floating toolbars require 36px+ clearance
   // so text labels ('Trang chủ', 'Cụm rạp'...) sit comfortably above the browser bar and are never clipped.
   const bottomInset = insets.bottom > 0
-    ? insets.bottom + 8
-    : (isMobileWeb ? 40 : (isWeb ? 16 : (Platform.OS === 'ios' ? 32 : 12)));
+    ? Math.max(insets.bottom + 6, isMobileWeb ? 36 : 24)
+    : (isMobileWeb ? 36 : (isWeb ? 10 : (Platform.OS === 'ios' ? 28 : 10)));
 
-  const tabHeight = 56 + bottomInset;
+  // 64px base height gives comfortable headroom for 24px icon + label without vertical compression
+  const tabHeight = 64 + bottomInset;
 
   return (
     <Tabs
@@ -31,7 +32,7 @@ export default function TabLayout() {
           borderTopColor: 'rgba(255, 255, 255, 0.08)',
           borderTopWidth: 1,
           height: tabHeight,
-          paddingTop: 8,
+          paddingTop: 6,
           paddingBottom: bottomInset,
           elevation: 16,
           shadowColor: '#000',
@@ -42,15 +43,14 @@ export default function TabLayout() {
         tabBarItemStyle: {
           justifyContent: 'center',
           alignItems: 'center',
-          paddingVertical: 2,
+          paddingVertical: 0,
         },
         tabBarActiveTintColor: THEME.colors.primaryContainer,
         tabBarInactiveTintColor: THEME.colors.onSurfaceVariant,
         tabBarLabelStyle: {
           fontSize: 10.5,
           fontWeight: '700',
-          marginTop: 2,
-          lineHeight: 14,
+          marginTop: 1,
         },
       }}
     >
